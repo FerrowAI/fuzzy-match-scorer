@@ -1,0 +1,33 @@
+# fuzzy-match-scorer
+
+> Zero-dependency fuzzy string matching (Levenshtein, Damerau-Levenshtein, Jaro-Winkler, token-set ratio) with bestMatch/rankMatches helpers.
+
+fuzzy-match-scorer resolves a slightly-wrong string against a list of known
+candidates, returning a normalized 0-1 similarity score. It exists because
+agents and CLIs constantly need to match typo'd tool/command names, fuzzy
+user queries, or near-miss identifiers against a known vocabulary — this
+package does that with strict TypeScript, zero runtime dependencies, and
+four selectable algorithms (character-edit-distance based and token based).
+
+## API
+
+- `levenshtein(a: string, b: string): number` — raw edit distance.
+- `damerauLevenshtein(a: string, b: string): number` — edit distance incl. adjacent transpositions.
+- `normalizedLevenshtein(a: string, b: string): number` — 0-1 similarity.
+- `normalizedDamerauLevenshtein(a: string, b: string): number` — 0-1 similarity.
+- `jaro(a: string, b: string): number` — 0-1 Jaro similarity.
+- `jaroWinkler(a: string, b: string, prefixScale?: number, maxPrefix?: number): number` — 0-1, prefix-boosted.
+- `tokenSetRatio(a: string, b: string): number` — order-insensitive multi-word similarity.
+- `rankMatches(query: string, candidates: readonly string[], options?: MatchOptions): RankedMatch[]`
+- `bestMatch(query: string, candidates: readonly string[], options?: MatchOptions): RankedMatch | null`
+- `type Algorithm = "levenshtein" | "damerau" | "jaro-winkler" | "token-set"`
+- `interface MatchOptions { algorithm?: Algorithm; threshold?: number; caseSensitive?: boolean }`
+- `interface RankedMatch { candidate: string; score: number; index: number }`
+
+## Install
+
+```bash
+npm install fuzzy-match-scorer
+```
+
+Part of the Ferrow open-source toolkit: https://github.com/Ruzylo-cloud/ferrow-toolkit — sponsored by https://ferrow.ai

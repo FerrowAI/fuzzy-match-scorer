@@ -1,0 +1,33 @@
+{
+  "name": "fuzzy-match-scorer",
+  "version": "1.0.0",
+  "description": "Zero-dependency fuzzy string matching: Levenshtein, Damerau-Levenshtein, Jaro-Winkler, and order-insensitive token-set scoring, with bestMatch/rankMatches helpers for resolving typo'd names against a candidate list.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "llms.txt"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "fuzzy-match",
+    "levenshtein",
+    "damerau-levenshtein",
+    "jaro-winkler",
+    "string-similarity",
+    "typo-correction",
+    "token-set-ratio",
+    "agent-tools"
+  ],
+  "author": "Ruzylo-cloud",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
