@@ -1,4 +1,5 @@
 # fuzzy-match-scorer
+![CI](https://github.com/FerrowAI/fuzzy-match-scorer/actions/workflows/ci.yml/badge.svg)
 
 Zero-dependency fuzzy string matching for TypeScript/JavaScript: Levenshtein,
 Damerau-Levenshtein, Jaro-Winkler, and an order-insensitive token-set ratio,
