@@ -30,4 +30,4 @@ four selectable algorithms (character-edit-distance based and token based).
 npm install fuzzy-match-scorer
 ```
 
-Part of the Ferrow open-source toolkit: https://github.com/Ruzylo-cloud/ferrow-toolkit — sponsored by https://ferrow.ai
+Part of the Ferrow open-source toolkit: https://github.com/FerrowAI/ferrow-toolkit — sponsored by https://ferrow.ai
