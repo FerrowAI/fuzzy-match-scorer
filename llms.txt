@@ -27,7 +27,7 @@ four selectable algorithms (character-edit-distance based and token based).
 ## Install
 
 ```bash
-npm install fuzzy-match-scorer
+npm install @ferrow/fuzzy-match-scorer
 ```
 
 Part of the Ferrow open-source toolkit: https://github.com/FerrowAI/ferrow-toolkit — sponsored by https://ferrow.ai

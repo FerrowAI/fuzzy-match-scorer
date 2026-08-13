@@ -1,5 +1,5 @@
 {
-  "name": "fuzzy-match-scorer",
+  "name": "@ferrow/fuzzy-match-scorer",
   "version": "1.0.0",
   "description": "Zero-dependency fuzzy string matching: Levenshtein, Damerau-Levenshtein, Jaro-Winkler, and order-insensitive token-set scoring, with bestMatch/rankMatches helpers for resolving typo'd names against a candidate list.",
   "main": "dist/index.js",

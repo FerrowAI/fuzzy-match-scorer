@@ -16,7 +16,7 @@ TypeScript, and predictable 0-1 scores.
 ## Install
 
 ```bash
-npm install fuzzy-match-scorer
+npm install @ferrow/fuzzy-match-scorer
 ```
 
 ## Quickstart
